@@ -29,3 +29,8 @@ Scenario: Add two numbers
 	And the second number is 5
 	When the two numbers are divided
 	Then the divans should be 3
+
+	Scenario: Sqrt of a number
+	Given the first number is 49
+	When the two numbers are sqrt
+	Then the sqrtans should be 7

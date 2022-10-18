@@ -111,5 +111,27 @@ namespace SpecFlowProject1.StepDefinitions
             Assert.AreEqual(a, result);
             //throw new PendingStepException();
         }
+
+        [When("the two numbers are sqrt")]
+
+        public void WhenTheTwoNumbersAreSqrt()
+        {
+            //TODO: implement act (action) logic
+            Console.WriteLine($"{nameof(WhenTheTwoNumbersAreSqrt)}");
+            // throw new PendingStepException();
+
+        }
+
+        [Then("the sqrtans should be (.*)")]
+        public void ThenTheSqrtansShouldBe(double result)
+        {
+
+            double a = cal.Sqrt(i);
+            //result = Math.Sqrt(i);
+            //TODO: implement assert (verification) logic
+            Console.WriteLine($"{nameof(ThenTheAnswerShouldBe)} : {result}");
+            Assert.AreEqual(a, result);
+            //throw new PendingStepException();
+        }
     }
 }

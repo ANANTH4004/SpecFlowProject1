@@ -10,7 +10,23 @@ namespace SpecFlowProject1
     {
         public int Add(int i ,int j)
         {
-            return i + i;
+            return i + j;
+        }
+        public double Sqrt(int i)
+        {
+           return Math.Sqrt(i);
+        }
+        public bool Login(string uid, string pwd)
+        {
+           
+             if(pwd== "Test@123")
+            {
+                return true;
+            }
+            else
+            {
+                return false ;
+            }
         }
     }
 }
